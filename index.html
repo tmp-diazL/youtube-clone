@@ -17,8 +17,8 @@
 <body class="bg-all font-sans">
 
     <!-- header -->
-    <header class="topbar bg-white py-3 shadow z-20">
-        <div class="topbar-menu">
+    <header class="topbar bg-white py-3 shadow flex z-20 sticky pin-t">
+        <div class="topbar-menu flex items-center w-1/5">
             <div class="flex items-center pl-8">
                 <a href="#">
                     <i class="fas fa-bars fa-lg mr-8 text-grey text-lg"></i>
@@ -77,44 +77,45 @@
                 </a>
             </div>
         </div>
-        <div class="topbar-search">
-            <div class="flex items-center justify-between ml-24 pr-8">
-                <form class="flex items-center justify-center">
-                    <input type="text" value="Search" class="text-grey-dark font-light text-sm py-1 px-2 border w-132">
-                    <button class="bg-grey-lightest hover:bg-grey-lighter border-t border-b border-r px-6">
-                        <i class="fa fa-search text-grey-dark py-1"></i>
-                    </button>
-                </form>
+        <div class="topbar-search flex items-center justify-between w-4/5 mr-8">
+            <!-- <div class="flex items-center justify-between"> -->
+            <form class="flex items-center justify-center mx-20">
+                <input type="text" value="Search" class="text-grey-dark font-light text-sm py-1 px-2 border w-132">
+                <button class="bg-grey-lightest hover:bg-grey-lighter border-t border-b border-r px-6">
+                    <i class="fa fa-search text-grey-dark py-1"></i>
+                </button>
+            </form>
 
-                <div class="flex items-center">
-                    <a href="#" class="mr-8">
-                        <i class="fas fa-video text-grey-dark"></i>
-                    </a>
-                    <a href="#" class="inline-block texg-grey-light h-6 w-6 mr-8">
-                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
-                            <g class="fill-current text-grey-dark style-scope yt-icon">
-                                <path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"
-                                    class="style-scope yt-icon"></path>
-                            </g>
-                        </svg>
-                    </a>
-                    <a href="#" class="mr-8">
-                        <i class="fas fa-comment text-grey-dark"></i>
-                    </a>
-                    <a href="#" class="mr-8">
-                        <i class="fas fa-ellipsis-v text-grey-dark"></i>
-                    </a>
-                    <a href="#" class="text-blue uppercase font-semibold text-xs">sign in</a>
-                </div>
+            <div class="flex items-center">
+                <a href="#" class="mr-8">
+                    <i class="fas fa-video text-grey-dark"></i>
+                </a>
+                <a href="#" class="inline-block texg-grey-light h-6 w-6 mr-8">
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                        <g class="fill-current text-grey-dark style-scope yt-icon">
+                            <path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"
+                                class="style-scope yt-icon"></path>
+                        </g>
+                    </svg>
+                </a>
+                <a href="#" class="mr-8">
+                    <i class="fas fa-comment text-grey-dark"></i>
+                </a>
+                <a href="#" class="mr-8">
+                    <i class="fas fa-ellipsis-v text-grey-dark"></i>
+                </a>
+                <a href="#" class="text-blue uppercase font-semibold text-xs">sign in</a>
+                <!-- </div> -->
             </div>
         </div>
     </header>
     <!-- end of header -->
 
-    <main class="main-content">
+    <!-- youtube body -->
+    <main class="youtube-content flex">
 
         <!-- sidebar menu -->
-        <div class="aside bg-transparent z-10 h-full pt-2 text-sm">
+        <div class="sidebar w-1/5 bg-aside z-10 h-full pt-2 text-sm">
 
             <a href="#" class="tracking-tight text-black">
                 <div class="pl-8 py-3 active flex items-center">
@@ -307,17 +308,579 @@
         <!-- end of sidebar -->
 
         <!-- main content -->
-        <div class="bg-white content">
-            <div class="container mx-auto bg-blue">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas voluptatum laudantium doloremque sed harum rem doloribus
-                temporibus maxime blanditiis eligendi?
+        <div class="youtube-videos w-4/5">
+
+            <div class="px-12 py-8">
+
+                <div class="font-medium mb-6">
+                    Youtube Mixes
+                    <span class="text-aside text-xs tracking-tight">Nonstop playlists based on a song or artist</span>
+                </div>
+
+                <!-- row -->
+                <div class="flex -mx-1 mb-4 relative">
+                    <!-- thumbnail -->
+                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                        <a href="#">
+                            <div class="thumbnail-image relative mb-2">
+                                <img src="images/thumb6.jpg" alt="video">
+                                <div class="bg-black text-white text-xs absolute pin-b pin-r w-2/5 h-full opacity-90 flex flex-col items-center justify-center">
+                                    <span class="pb-2">50+</span>
+                                    <i class="fas fa-play text-xxs"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="thumbnail-content ">
+                            <div class="mb-2">
+                                <a href="#" class="text-black">My Mix</a>
+                            </div>
+
+                            <div class="mb-1">
+                                <a href="#" class="text-grey-darkest text-xs text-aside font-light pr-1">Youtube</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of thumbnail -->
+
+                    <!-- thumbnail -->
+                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                        <a href="#">
+                            <div class="thumbnail-image relative mb-2">
+                                <img src="images/thumb7.jpg" alt="video">
+                                <div class="bg-black text-white text-xs absolute pin-b pin-r w-2/5 h-full opacity-90 flex flex-col items-center justify-center">
+                                    <span class="pb-2">50+</span>
+                                    <i class="fas fa-play text-xxs"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="thumbnail-content ">
+                            <div class="mb-2">
+                                <a href="#" class="text-black">Mix - Flamenco</a>
+                            </div>
+
+                            <div class="mb-1">
+                                <a href="#" class="text-grey-darkest text-xs text-aside font-light pr-1">Youtube</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end of thumbnail -->
+
+                    <!-- thumbnail -->
+                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                        <a href="#">
+                            <div class="thumbnail-image relative mb-2">
+                                <img src="images/thumb8.jpg" alt="video">
+                                <div class="bg-black text-white text-xs absolute pin-b pin-r w-2/5 h-full opacity-90 flex flex-col items-center justify-center">
+                                    <span class="pb-2">50+</span>
+                                    <i class="fas fa-play text-xxs"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="thumbnail-content ">
+                            <div class="mb-2">
+                                <a href="#" class="text-black">Mix - Caffeine - Ben Woods Flamenco Guitar - TABS!</a>
+                            </div>
+
+                            <div class="mb-1">
+                                <a href="#" class="text-grey-darkest text-xs text-aside font-light pr-1">Youtube</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end of thumbnail -->
+
+                    <!-- thumbnail -->
+                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                        <a href="#">
+                            <div class="thumbnail-image relative mb-2">
+                                <img src="images/thumb9.jpg" alt="video">
+                                <div class="bg-black text-white text-xs absolute pin-b pin-r w-2/5 h-full opacity-90 flex flex-col items-center justify-center">
+                                    <span class="pb-2">50+</span>
+                                    <i class="fas fa-play text-xxs"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="thumbnail-content ">
+                            <div class="mb-2">
+                                <a href="#" class="text-black">Mix - Fandagos - Flamenco Guitar (tuned down) - Ben Woods</a>
+                            </div>
+
+                            <div class="mb-1">
+                                <a href="#" class="text-grey-darkest text-xs text-aside font-light pr-1">Youtube</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end of thumbnail -->
+
+                    <!-- thumbnail -->
+                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                        <a href="#">
+                            <div class="thumbnail-image mb-2 relative">
+                                <img src="images/thumb10.jpg" alt="video">
+                                <div class="bg-black text-white text-xs absolute pin-b pin-r w-2/5 h-full opacity-90 flex flex-col items-center justify-center">
+                                    <span class="pb-2">50+</span>
+                                    <i class="fas fa-play text-xxs"></i>
+                                </div>
+                                <button class="rounded-full h-8 w-8 bg-grey-lightest absolute shadow-md">
+                                    <i class="fas fa-angle-right fa-lg text-grey"></i>
+                                </button>
+                            </div>
+                        </a>
+
+                        <div class="thumbnail-content ">
+                            <div class="mb-2">
+                                <a href="#" class="text-black">Mix - Lester DeVoe</a>
+                            </div>
+
+                            <div class="mb-1">
+                                <a href="#" class="text-grey-darkest text-xs text-aside font-light pr-1">Youtube</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of thumbnail -->
+                </div>
+                <!-- end row -->
+
+                <div class="divider border-b"></div>
+
+                <div class="font-medium mb-4 mt-4">Recommended</div>
+
+                <!-- row -->
+                <div class="flex -mx-1 mb-6">
+                    <!-- thumbnail -->
+                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                        <a href="#">
+                            <div class="thumbnail-image relative mb-2">
+                                <img src="images/thumb1.png" alt="video">
+                                <span class="bg-black text-white text-xs absolute pin-b pin-r m-1 p-1">6:46</span>
+                            </div>
+                        </a>
+
+                        <div class="thumbnail-content ">
+                            <div class="mb-2">
+                                <a href="#" class="text-black">LeBron James would not be this great if he played again...</a>
+                            </div>
+
+                            <div class="mb-1">
+                                <a href="#" class="text-grey-darkest text-xs text-aside uppercase font-light pr-1">espn</a>
+                                <i class="fas fa-check-circle text-aside"></i>
+                            </div>
+
+                            <div>
+                                <span>
+                                    <a href="#" class="text-xs font-light text-aside">6.1K views</a>
+                                </span>
+                                <span>&middot;</span>
+                                <span>
+                                    <a href="#" class="text-xs font-light text-aside">39 minutes ago</a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end of thumbnail -->
+
+                    <!-- thumbnail -->
+                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                        <a href="#">
+                            <div class="thumbnail-image relative mb-2">
+                                <img src="images/thumb2.png" alt="video">
+                                <span class="bg-black text-white text-xs absolute pin-b pin-r m-1 p-1">5:58</span>
+                            </div>
+                        </a>
+
+                        <div class="thumbnail-content ">
+                            <div class="mb-2">
+                                <a href="#" class="text-black">Make Millions Using API's</a>
+                            </div>
+
+                            <div class="mb-1">
+                                <a href="#" class="text-grey-darkest text-xs text-aside uppercase font-light pr-1">Chris Hawkes</a>
+                            </div>
+
+                            <div>
+                                <span>
+                                    <a href="#" class="text-xs font-light text-aside">94K views</a>
+                                </span>
+                                <span>&middot;</span>
+                                <span>
+                                    <a href="#" class="text-xs font-light text-aside">1 year ago</a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end of thumbnail -->
+
+                    <!-- thumbnail -->
+                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                        <a href="#">
+                            <div class="thumbnail-image relative mb-2">
+                                <img src="images/thumb3.png" alt="video">
+                                <span class="bg-black text-white text-xs absolute pin-b pin-r m-1 p-1">14:26</span>
+                            </div>
+                        </a>
+
+                        <div class="thumbnail-content ">
+                            <div class="mb-2">
+                                <a href="#" class="text-black">Trump's 2020 campaign manager explains an...</a>
+                            </div>
+
+                            <div class="mb-1">
+                                <a href="#" class="text-grey-darkest text-xs text-aside uppercase font-light pr-1">cnn</a>
+                            </div>
+
+                            <div>
+                                <span>
+                                    <a href="#" class="text-xs font-light text-aside">945K views</a>
+                                </span>
+                                <span>&middot;</span>
+                                <span>
+                                    <a href="#" class="text-xs font-light text-aside">34 minutes ago</a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end of thumbnail -->
+
+                    <!-- thumbnail -->
+                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                        <a href="#">
+                            <div class="thumbnail-image relative mb-2">
+                                <img src="images/thumb4.png" alt="video">
+                                <span class="bg-black text-white text-xs absolute pin-b pin-r m-1 p-1">15:10</span>
+                            </div>
+                        </a>
+
+                        <div class="thumbnail-content ">
+                            <div class="mb-2">
+                                <a href="#" class="text-black">Visit Paris' six biggest attraction in hours 3 hours...</a>
+                            </div>
+
+                            <div class="mb-1">
+                                <a href="#" class="text-grey-darkest text-xs text-aside uppercase font-light pr-1">Jay Swanson</a>
+                                <i class="fas fa-check-circle text-aside"></i>
+                            </div>
+
+                            <div>
+                                <span>
+                                    <a href="#" class="text-xs font-light text-aside">71K views</a>
+                                </span>
+                                <span>&middot;</span>
+                                <span>
+                                    <a href="#" class="text-xs font-light text-aside">5 years ago</a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end of thumbnail -->
+
+                    <!-- thumbnail -->
+                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                        <a href="#">
+                            <div class="thumbnail-image relative mb-2">
+                                <img src="images/thumb5.png" alt="video">
+                                <span class="bg-black text-white text-xs absolute pin-b pin-r m-1 p-1">1:31</span>
+                            </div>
+                        </a>
+
+                        <div class="thumbnail-content ">
+                            <div class="mb-2">
+                                <a href="#" class="text-black">Ben Wood Hybrid Heavy Metal and Flamenco Guitar...</a>
+                            </div>
+
+                            <div class="mb-1">
+                                <a href="#" class="text-grey-darkest text-xs text-aside uppercase font-light pr-1">Ben Woods</a>
+                                <i class="fas fa-check-circle text-aside"></i>
+                            </div>
+
+                            <div>
+                                <span>
+                                    <a href="#" class="text-xs font-light text-aside">16K views</a>
+                                </span>
+                                <span>&middot;</span>
+                                <span>
+                                    <a href="#" class="text-xs font-light text-aside">1 year ago</a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end of thumbnail -->
+                </div>
+                <!-- end row -->
+
+                <!-- row -->
+                <div class="flex -mx-1 mb-6">
+                    <!-- thumbnail -->
+                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                        <a href="#">
+                            <div class="thumbnail-image relative mb-2">
+                                <img src="images/thumb1.png" alt="video">
+                                <span class="bg-black text-white text-xs absolute pin-b pin-r m-1 p-1">6:46</span>
+                            </div>
+                        </a>
+
+                        <div class="thumbnail-content ">
+                            <div class="mb-2">
+                                <a href="#" class="text-black">LeBron James would not be this great if he played again...</a>
+                            </div>
+
+                            <div class="mb-1">
+                                <a href="#" class="text-grey-darkest text-xs text-aside uppercase font-light pr-1">espn</a>
+                                <i class="fas fa-check-circle text-aside"></i>
+                            </div>
+
+                            <div>
+                                <span>
+                                    <a href="#" class="text-xs font-light text-aside">6.1K views</a>
+                                </span>
+                                <span>&middot;</span>
+                                <span>
+                                    <a href="#" class="text-xs font-light text-aside">39 minutes ago</a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end of thumbnail -->
+
+                    <!-- thumbnail -->
+                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                        <a href="#">
+                            <div class="thumbnail-image relative mb-2">
+                                <img src="images/thumb2.png" alt="video">
+                                <span class="bg-black text-white text-xs absolute pin-b pin-r m-1 p-1">5:58</span>
+                            </div>
+                        </a>
+
+                        <div class="thumbnail-content ">
+                            <div class="mb-2">
+                                <a href="#" class="text-black">Make Millions Using API's</a>
+                            </div>
+
+                            <div class="mb-1">
+                                <a href="#" class="text-grey-darkest text-xs text-aside uppercase font-light pr-1">Chris Hawkes</a>
+                            </div>
+
+                            <div>
+                                <span>
+                                    <a href="#" class="text-xs font-light text-aside">94K views</a>
+                                </span>
+                                <span>&middot;</span>
+                                <span>
+                                    <a href="#" class="text-xs font-light text-aside">1 year ago</a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end of thumbnail -->
+
+                    <!-- thumbnail -->
+                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                        <a href="#">
+                            <div class="thumbnail-image relative mb-2">
+                                <img src="images/thumb3.png" alt="video">
+                                <span class="bg-black text-white text-xs absolute pin-b pin-r m-1 p-1">14:26</span>
+                            </div>
+                        </a>
+
+                        <div class="thumbnail-content ">
+                            <div class="mb-2">
+                                <a href="#" class="text-black">Trump's 2020 campaign manager explains an...</a>
+                            </div>
+
+                            <div class="mb-1">
+                                <a href="#" class="text-grey-darkest text-xs text-aside uppercase font-light pr-1">cnn</a>
+                            </div>
+
+                            <div>
+                                <span>
+                                    <a href="#" class="text-xs font-light text-aside">945K views</a>
+                                </span>
+                                <span>&middot;</span>
+                                <span>
+                                    <a href="#" class="text-xs font-light text-aside">34 minutes ago</a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end of thumbnail -->
+
+                    <!-- thumbnail -->
+                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                        <a href="#">
+                            <div class="thumbnail-image relative mb-2">
+                                <img src="images/thumb4.png" alt="video">
+                                <span class="bg-black text-white text-xs absolute pin-b pin-r m-1 p-1">15:10</span>
+                            </div>
+                        </a>
+
+                        <div class="thumbnail-content ">
+                            <div class="mb-2">
+                                <a href="#" class="text-black">Visit Paris' six biggest attraction in hours 3 hours...</a>
+                            </div>
+
+                            <div class="mb-1">
+                                <a href="#" class="text-grey-darkest text-xs text-aside uppercase font-light pr-1">Jay Swanson</a>
+                                <i class="fas fa-check-circle text-aside"></i>
+                            </div>
+
+                            <div>
+                                <span>
+                                    <a href="#" class="text-xs font-light text-aside">71K views</a>
+                                </span>
+                                <span>&middot;</span>
+                                <span>
+                                    <a href="#" class="text-xs font-light text-aside">5 years ago</a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end of thumbnail -->
+
+                    <!-- thumbnail -->
+                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                        <a href="#">
+                            <div class="thumbnail-image relative mb-2">
+                                <img src="images/thumb5.png" alt="video">
+                                <span class="bg-black text-white text-xs absolute pin-b pin-r m-1 p-1">1:31</span>
+                            </div>
+                        </a>
+
+                        <div class="thumbnail-content ">
+                            <div class="mb-2">
+                                <a href="#" class="text-black">Ben Wood Hybrid Heavy Metal and Flamenco Guitar...</a>
+                            </div>
+
+                            <div class="mb-1">
+                                <a href="#" class="text-grey-darkest text-xs text-aside uppercase font-light pr-1">Ben Woods</a>
+                                <i class="fas fa-check-circle text-aside"></i>
+                            </div>
+
+                            <div>
+                                <span>
+                                    <a href="#" class="text-xs font-light text-aside">16K views</a>
+                                </span>
+                                <span>&middot;</span>
+                                <span>
+                                    <a href="#" class="text-xs font-light text-aside">1 year ago</a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end of thumbnail -->
+                </div>
+                <!-- end row -->
+
+                <div class="mt-10 mb-6">
+                    <a href="#" class="text-aside text-xs font-medium uppercase">show more</a>
+                </div>
+
+                <div class="divider border-b"></div>
+
+                <div class="font-medium mb-6 mt-4 flex items-center justify-between">
+                    <div class="flex items-center">
+                        <img src=" images/react.jpg " alt="user-avatar " class="w-8 h-8 rounded-full mr-2 ">
+                        <div class=" ">React Conf
+                            <span class="text-aside text-xs tracking-tight pl-2 ">Recommended channel</span>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="# " class="text-white bg-btn py-2 px-3 uppercase text-xs font-light tracking-light ">subscribe
+                            <span class="text-grey-light text-xs font-thin ">2.1K</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- row -->
+                <div class="flex -mx-1 mb-6 ">
+                    <!-- thumbnail -->
+                    <div class="thumbnail w-1/5 text-xs font-semibold px-1 ">
+                        <a href="# ">
+                            <div class="thumbnail-image relative mb-2 ">
+                                <img src="images/thumb12.png " alt="video ">
+                                <span class="bg-black text-grey-light text-xs absolute pin-b pin-r m-1 p-1 ">1:35:30</span>
+                            </div>
+                        </a>
+
+                        <div class="thumbnail-content ">
+                            <div class="mb-2 ">
+                                <a href="# " class="text-black ">React Today and Tomorrow and 90% Cleaner React</a>
+                            </div>
+
+                            <div class="mb-1 ">
+                                <a href="# " class="text-grey-darkest text-xs text-aside font-light pr-1 ">React Conf</a>
+                            </div>
+
+                            <div>
+                                <span>
+                                    <a href="# " class="text-xs font-light text-aside ">22K views</a>
+                                </span>
+                                <span>&middot;</span>
+                                <span>
+                                    <a href="# " class="text-xs font-light text-aside ">3 days ago</a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end of thumbnail -->
+
+                    <!-- thumbnail -->
+                    <div class="thumbnail w-1/5 text-xs font-semibold px-1 ">
+                        <a href="# ">
+                            <div class="thumbnail-image relative mb-2 ">
+                                <img src="images/thumb11.png " alt="video ">
+                                <span class="bg-black text-grey-light text-xs absolute pin-b pin-r m-1 p-1 ">8:48:03</span>
+                            </div>
+                        </a>
+
+                        <div class="thumbnail-content ">
+                            <div class="mb-2 ">
+                                <a href="# " class="text-black ">React Today and Tomorrow and 90% Cleaner React</a>
+                            </div>
+
+                            <div class="mb-1 ">
+                                <a href="# " class="text-grey-darkest text-xs text-aside font-light pr-1 ">React Conf</a>
+                            </div>
+
+                            <div>
+                                <span>
+                                    <a href="# " class="text-xs font-light text-aside ">22K views</a>
+                                </span>
+                                <span>&middot;</span>
+                                <span>
+                                    <a href="# " class="text-xs font-light text-aside ">3 days ago</a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end of thumbnail -->
+                </div>
+                <!-- end row -->
+
+                <div class="divider border-b "></div>
             </div>
-            <div>lorem</div>
 
         </div>
-        <!-- end of main content -->
+        <!-- end of content -->
 
     </main>
+    <!-- end youtube body -->
 
 </body>
 

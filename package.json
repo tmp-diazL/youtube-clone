@@ -1,0 +1,20 @@
+{
+  "name": "youtube-clone",
+  "version": "1.0.0",
+  "description": "youtube clone using tailwind",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diaz-L/youtube-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diaz-L/youtube-clone/issues"
+  },
+  "homepage": "https://github.com/diaz-L/youtube-clone#readme"
+}
