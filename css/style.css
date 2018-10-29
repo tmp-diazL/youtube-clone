@@ -12,20 +12,21 @@ a {
     text-decoration: none;
 }
 
-.section-header {
+.topbar {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     position: sticky;
     top: 0;
 }
 
-.header-menu {
+.topbar-menu {
     grid-column: 1 / span 2;
 }
 
-.header-searchbar {
-    grid-column: 3 / span 7;
+.topbar-search {
+    grid-column: 3 / span 10;
 }
+
 .header-searchbar input {
     border-bottom-left-radius: 2px;
     border-top-left-radius: 2px;
@@ -40,7 +41,7 @@ a {
 }
 
 
-.bg-aside {
+.bg-all {
     background: #efefef;
 }
 .text-aside {
@@ -66,7 +67,10 @@ a {
     background: #ddd;
 }
 .main-content .content {
-    grid-column: 3 / 13;
+    grid-column: 3 / span 10;
+}
+.content > div {
+    margin: 0 auto;
 }
 
 .menu-item > svg {
