@@ -4,6 +4,9 @@
 .w-132 {
     width: 36rem;
 }
+.h-5 {
+    height: 1.25rem;
+}
 
 a {
     text-decoration: none;
@@ -34,4 +37,39 @@ a {
 
 .header-settings {
     grid-column: 10 / span 3;
+}
+
+
+.bg-aside {
+    background: #efefef;
+}
+.text-aside {
+    color: #888;
+}
+.active {
+    background: #bbb;
+    font-weight: 700;
+}
+.active:hover {
+    background: #aaa !important;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.main-content .aside {
+    grid-column: 1 / span 2;
+}
+.main-content .aside .menu-item:hover {
+    background: #ddd;
+}
+.main-content .content {
+    grid-column: 3 / 13;
+}
+
+.menu-item > svg {
+    height: 1.5rem !important;
+    width: 1.5rem !important;
 }
