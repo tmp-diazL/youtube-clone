@@ -20,8 +20,8 @@
     <header class="topbar bg-white py-3 shadow flex z-20 sticky pin-t">
         <div class="topbar-menu flex items-center w-1/5">
             <div class="flex items-center pl-8">
-                <a href="#">
-                    <i class="fas fa-bars fa-lg mr-8 text-grey text-lg"></i>
+                <a id="hb-menu" href="#">
+                    <i class="fas fa-bars fa-lg mr-8 text-grey text-lg hidden md:block"></i>
                 </a>
                 <a href="#" class="w-20">
                     <svg viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope ytd-topbar-logo-renderer"
@@ -112,10 +112,10 @@
     <!-- end of header -->
 
     <!-- youtube body -->
-    <main class="youtube-content flex">
+    <main class="youtube-content flex bg-aside">
 
         <!-- sidebar menu -->
-        <div class="sidebar hidden lg:block w-1/5 bg-aside z-10 h-full pt-2 text-sm">
+        <div class="sidebar w-1/5 bg-transparent h-screen z-10 pt-2 text-sm slide-menuOut">
 
             <a href="#" class="tracking-tight text-black">
                 <div class="pl-8 py-3 active flex items-center">
@@ -308,7 +308,7 @@
         <!-- end of sidebar -->
 
         <!-- main content -->
-        <div class="youtube-videos w-full lg:w-4/5">
+        <div class="youtube-videos bg-white w-full lg:w-4/5">
 
             <div class="px-12 py-8">
 
@@ -881,6 +881,26 @@
 
     </main>
     <!-- end youtube body -->
+
+
+    <script type="text/javascript">
+        let menu = document.getElementById('hb-menu');
+        let videos = document.querySelector('.youtube-videos');
+        let sidebar = document.querySelector('.sidebar');
+
+        menu.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            if (sidebar.classList.contains('slide-menuIn')) {
+                sidebar.classList.replace('slide-menuIn', 'slide-menuOut');
+                videos.classList.toggle('lg:w-4/5');
+            } else {
+                sidebar.classList.replace('slide-menuOut', 'slide-menuIn');
+                videos.classList.toggle('lg:w-4/5');
+            }
+        });
+
+    </script>
 
 </body>
 
