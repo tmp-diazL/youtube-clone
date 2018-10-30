@@ -77,20 +77,20 @@
                 </a>
             </div>
         </div>
-        <div class="topbar-search flex items-center justify-between w-4/5 mr-8">
+        <div class="topbar-search flex items-center justify-between w-4/5 mr-4 lg:mr-8">
             <!-- <div class="flex items-center justify-between"> -->
-            <form class="flex items-center justify-center mx-20">
-                <input type="text" value="Search" class="text-grey-dark font-light text-sm py-1 px-2 border w-132">
+            <form class="flex items-center justify-center mx-4 lg:mx-20">
+                <input type="text" value="Search" class="text-grey-dark font-light text-sm py-1 px-2 border outline-none">
                 <button class="bg-grey-lightest hover:bg-grey-lighter border-t border-b border-r px-6">
                     <i class="fa fa-search text-grey-dark py-1"></i>
                 </button>
             </form>
 
-            <div class="flex items-center">
-                <a href="#" class="mr-8">
+            <div class="flex items-center md:mr-12">
+                <a href="#" class="mr-4 lg:mr-8">
                     <i class="fas fa-video text-grey-dark"></i>
                 </a>
-                <a href="#" class="inline-block texg-grey-light h-6 w-6 mr-8">
+                <a href="#" class="inline-block texg-grey-light h-6 w-6 mr-4 lg:mr-8">
                     <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
                         <g class="fill-current text-grey-dark style-scope yt-icon">
                             <path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"
@@ -98,10 +98,10 @@
                         </g>
                     </svg>
                 </a>
-                <a href="#" class="mr-8">
+                <a href="#" class="mr-4 lg:mr-8">
                     <i class="fas fa-comment text-grey-dark"></i>
                 </a>
-                <a href="#" class="mr-8">
+                <a href="#" class="mr-4 lg:mr-8">
                     <i class="fas fa-ellipsis-v text-grey-dark"></i>
                 </a>
                 <a href="#" class="text-blue uppercase font-semibold text-xs">sign in</a>
@@ -115,7 +115,7 @@
     <main class="youtube-content flex">
 
         <!-- sidebar menu -->
-        <div class="sidebar w-1/5 bg-aside z-10 h-full pt-2 text-sm">
+        <div class="sidebar hidden lg:block w-1/5 bg-aside z-10 h-full pt-2 text-sm">
 
             <a href="#" class="tracking-tight text-black">
                 <div class="pl-8 py-3 active flex items-center">
@@ -308,7 +308,7 @@
         <!-- end of sidebar -->
 
         <!-- main content -->
-        <div class="youtube-videos w-4/5">
+        <div class="youtube-videos w-full lg:w-4/5">
 
             <div class="px-12 py-8">
 
@@ -318,9 +318,9 @@
                 </div>
 
                 <!-- row -->
-                <div class="flex -mx-1 mb-4 relative">
+                <div class="flex flex-wrap -mx-1 mb-4 relative">
                     <!-- thumbnail -->
-                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                    <div class="thumbnail w-1/2 md:w-1/3 lg:w-1/5 text-xs font-semibold px-1">
                         <a href="#">
                             <div class="thumbnail-image relative mb-2">
                                 <img src="images/thumb6.jpg" alt="video">
@@ -344,7 +344,7 @@
                     <!-- end of thumbnail -->
 
                     <!-- thumbnail -->
-                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                    <div class="thumbnail w-1/2 md:w-1/3 lg:w-1/5 text-xs font-semibold px-1">
                         <a href="#">
                             <div class="thumbnail-image relative mb-2">
                                 <img src="images/thumb7.jpg" alt="video">
@@ -369,7 +369,7 @@
                     <!-- end of thumbnail -->
 
                     <!-- thumbnail -->
-                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                    <div class="thumbnail w-1/2 md:w-1/3 lg:w-1/5 text-xs font-semibold px-1">
                         <a href="#">
                             <div class="thumbnail-image relative mb-2">
                                 <img src="images/thumb8.jpg" alt="video">
@@ -394,7 +394,7 @@
                     <!-- end of thumbnail -->
 
                     <!-- thumbnail -->
-                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                    <div class="thumbnail w-1/2 md:w-1/3 lg:w-1/5 text-xs font-semibold px-1">
                         <a href="#">
                             <div class="thumbnail-image relative mb-2">
                                 <img src="images/thumb9.jpg" alt="video">
@@ -419,7 +419,7 @@
                     <!-- end of thumbnail -->
 
                     <!-- thumbnail -->
-                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                    <div class="thumbnail w-1/2 md:w-1/3 lg:w-1/5 text-xs font-semibold px-1">
                         <a href="#">
                             <div class="thumbnail-image mb-2 relative">
                                 <img src="images/thumb10.jpg" alt="video">
@@ -452,9 +452,9 @@
                 <div class="font-medium mb-4 mt-4">Recommended</div>
 
                 <!-- row -->
-                <div class="flex -mx-1 mb-6">
+                <div class="flex flex-wrap -mx-1 mb-6">
                     <!-- thumbnail -->
-                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                    <div class="thumbnail w-1/2 md:w-1/3 lg:w-1/5 text-xs font-semibold px-1 sm:mb-4">
                         <a href="#">
                             <div class="thumbnail-image relative mb-2">
                                 <img src="images/thumb1.png" alt="video">
@@ -487,7 +487,7 @@
                     <!-- end of thumbnail -->
 
                     <!-- thumbnail -->
-                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                    <div class="thumbnail w-1/2 md:w-1/3 lg:w-1/5 text-xs font-semibold px-1 sm:mb-4">
                         <a href="#">
                             <div class="thumbnail-image relative mb-2">
                                 <img src="images/thumb2.png" alt="video">
@@ -519,7 +519,7 @@
                     <!-- end of thumbnail -->
 
                     <!-- thumbnail -->
-                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                    <div class="thumbnail w-1/2 md:w-1/3 lg:w-1/5 text-xs font-semibold px-1 sm:mb-4">
                         <a href="#">
                             <div class="thumbnail-image relative mb-2">
                                 <img src="images/thumb3.png" alt="video">
@@ -551,7 +551,7 @@
                     <!-- end of thumbnail -->
 
                     <!-- thumbnail -->
-                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                    <div class="thumbnail w-1/2 md:w-1/3 lg:w-1/5 text-xs font-semibold px-1 sm:mb-4">
                         <a href="#">
                             <div class="thumbnail-image relative mb-2">
                                 <img src="images/thumb4.png" alt="video">
@@ -584,7 +584,7 @@
                     <!-- end of thumbnail -->
 
                     <!-- thumbnail -->
-                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                    <div class="thumbnail w-1/2 md:w-1/3 lg:w-1/5 text-xs font-semibold px-1 sm:mb-4">
                         <a href="#">
                             <div class="thumbnail-image relative mb-2">
                                 <img src="images/thumb5.png" alt="video">
@@ -615,15 +615,15 @@
 
                     </div>
                     <!-- end of thumbnail -->
-                </div>
-                <!-- end row -->
+                    <!-- </div> -->
+                    <!-- end row -->
 
-                <!-- row -->
-                <div class="flex -mx-1 mb-6">
+                    <!-- row -->
+                    <!-- <div class="flex flex-wrap -mx-1 mb-6"> -->
                     <!-- thumbnail -->
-                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
-                        <a href="#">
-                            <div class="thumbnail-image relative mb-2">
+                    <div class="thumbnail w-1/2 md:w-1/3 lg:w-1/5 text-xs font-semibold px-1 sm:mb-4">
+                        <a href="#" class="thumbnail-image">
+                            <div class="w-full relative relative mb-2">
                                 <img src="images/thumb1.png" alt="video">
                                 <span class="bg-black text-white text-xs absolute pin-b pin-r m-1 p-1">6:46</span>
                             </div>
@@ -654,7 +654,7 @@
                     <!-- end of thumbnail -->
 
                     <!-- thumbnail -->
-                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                    <div class="thumbnail w-1/2 md:w-1/3 lg:w-1/5 text-xs font-semibold px-1 sm:mb-4">
                         <a href="#">
                             <div class="thumbnail-image relative mb-2">
                                 <img src="images/thumb2.png" alt="video">
@@ -686,7 +686,7 @@
                     <!-- end of thumbnail -->
 
                     <!-- thumbnail -->
-                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                    <div class="thumbnail w-1/2 md:w-1/3 lg:w-1/5 text-xs font-semibold px-1 sm:mb-4">
                         <a href="#">
                             <div class="thumbnail-image relative mb-2">
                                 <img src="images/thumb3.png" alt="video">
@@ -718,7 +718,7 @@
                     <!-- end of thumbnail -->
 
                     <!-- thumbnail -->
-                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                    <div class="thumbnail w-1/2 md:w-1/3 lg:w-1/5 text-xs font-semibold px-1 sm:mb-4">
                         <a href="#">
                             <div class="thumbnail-image relative mb-2">
                                 <img src="images/thumb4.png" alt="video">
@@ -751,7 +751,7 @@
                     <!-- end of thumbnail -->
 
                     <!-- thumbnail -->
-                    <div class="thumbnail w-1/5 text-xs font-semibold px-1">
+                    <div class="thumbnail w-1/2 md:w-1/3 lg:w-1/5 text-xs font-semibold px-1 sm:mb-4">
                         <a href="#">
                             <div class="thumbnail-image relative mb-2">
                                 <img src="images/thumb5.png" alt="video">
@@ -799,8 +799,8 @@
                         </div>
                     </div>
                     <div>
-                        <a href="# " class="text-white bg-btn py-2 px-3 uppercase text-xs font-light tracking-light ">subscribe
-                            <span class="text-grey-light text-xs font-thin ">2.1K</span>
+                        <a href="# " class="text-white bg-btn py-2 px-2 uppercase text-xs font-light tracking-light ">subscribe
+                            <span class="text-grey-light text-xs font-thin pr-2">2.1K</span>
                         </a>
                     </div>
                 </div>
@@ -808,7 +808,7 @@
                 <!-- row -->
                 <div class="flex -mx-1 mb-6 ">
                     <!-- thumbnail -->
-                    <div class="thumbnail w-1/5 text-xs font-semibold px-1 ">
+                    <div class="thumbnail w-1/2 md:w-1/3 lg:w-1/5 text-xs font-semibold px-1 ">
                         <a href="# ">
                             <div class="thumbnail-image relative mb-2 ">
                                 <img src="images/thumb12.png " alt="video ">
@@ -840,7 +840,7 @@
                     <!-- end of thumbnail -->
 
                     <!-- thumbnail -->
-                    <div class="thumbnail w-1/5 text-xs font-semibold px-1 ">
+                    <div class="thumbnail w-1/2 md:w-1/3 lg:w-1/5 text-xs font-semibold px-1 ">
                         <a href="# ">
                             <div class="thumbnail-image relative mb-2 ">
                                 <img src="images/thumb11.png " alt="video ">
